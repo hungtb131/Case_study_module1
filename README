@@ -1,0 +1,7 @@
+<h1>CASE STUDY MODULE 1</h1>
+Bài tập lớn tổng hợp kiến thức đã học trong mudule <br>
+Chủ đề xây dựng trình quản lý học viên <br>
+Trình quản lý học viên được dựa trên bài tập "ứng dụng quản lý sản phẩm" do coach Hòa hướng dẫn demo <br>
+Được chia làm hai giao diện bao gồm giao diện user (dành cho học viên trong lớp,coach,tutor,instructor) và giao diện admin ( dành cho người làm công tác quản lý như giáo vụ ) <br>
+Giao diện người dùng cho phép user xem được các thông tin học viên bằng cách click vào ảnh học viên hiện ra trên giao diện,click nút close để quay lại giao diện trước,và lọc học viên trong lớp phân biệt theo giới tính <br>
+Giao diên admin cho phép giáo vụ thêm,xóa học viên hoặc sửa thông tin học viên,up ảnh của học viên theo dạng đường dẫn <br>
