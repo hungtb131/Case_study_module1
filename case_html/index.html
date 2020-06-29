@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THÔNG TIN HỌC VIÊN</title>
+    <link rel="stylesheet" href="../case_css/style_index.css">
+
+</head>
+<body>
+<div id="banner"></div>
+<div id="main">
+    <div id="detail" style="display: none">
+        <div id="close">
+            <button title="Close" onclick="closeDetail();">X</button>
+        </div>
+        <div id="img">
+            <img id="avatar">
+        </div>
+        <div id="info">
+            <h1>Info student</h1>
+            <div id="info-comment">
+                <p>Full Name: </p>
+                <p>Another Name: </p>
+                <p>Date of Birth: </p>
+                <p>Gender: </p>
+                <p>Address: </p>
+                <p>Nationality: </p>
+                <p>Height: </p>
+            </div>
+            <div id="areaInfo"></div>
+        </div>
+    </div>
+    <div id="sidebar">
+        <ul>
+            <li onclick ="select('0');"><u>Female student</u></li>
+            <li onclick ="select('1');"><u>Male student</u></li>
+        </ul>
+    </div>
+    <div id="list-student" style="display: block"></div>
+</div>
+<div id="footer"></div>
+        <script src="../case_js/student.js"></script>
+        <script src="../case_js/main.js"></script>
+        <script src="../case_js/manage_student.js"></script>
+    <script>
+        function imgStudent(img,info) {
+            document.getElementById("detail").style.display = 'block';
+            document.getElementById("avatar").src = img;
+            document.getElementById("areaInfo").innerHTML = info;
+        }
+        function closeDetail() {
+            document.getElementById("detail").style.display = 'none';
+        }
+        function select(gender) {
+            let filtered = studentManage.students.filter(student => student.gender == gender);
+            studentManage.displayIndex(filtered);
+        }
+        studentManage.displayIndex(studentManage.students);
+    </script>
+</body>
+</html>
