@@ -1,0 +1,115 @@
+body {
+    width: 1437px;
+    margin: auto;
+}
+
+div#banner {
+    background-color: #010d85;
+    width: 100%;
+    height: 300px;
+    background-image: url("https://codegym.vn/wp-content/uploads/2017/03/CodeGym-3-02-copy.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+div#main {
+    width: 100%;
+    height: 500px;
+    background: yellow;
+    position: relative;
+}
+
+div#footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+}
+
+div#sidebar {
+    width: 25%;
+    height: 100%;
+    background-color: #badcba;
+    float: left;
+}
+
+div#list-student {
+    width: 75%;
+    height: 100%;
+    background-color: #bdbde6;
+    float: left;
+    overflow-y: auto;
+}
+
+ul {
+    font-size: 24px;
+    padding: 34px;
+    line-height: 35px;
+}
+ul li:hover {
+    color: orange;
+}
+
+div.student {
+    width: 150px;
+    height: auto;
+    float: left;
+    padding: 11px 12px;
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: 200px;
+}
+
+p {
+    font-size: large;
+    text-align: left;
+    margin: 0;
+    padding: 3px 0;
+}
+
+div#detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    left: 0;
+    top: 0;
+    opacity: 1;
+}
+
+div#img {
+    width: 25%;
+    height: 95%;
+    float: left;
+}
+
+div#img img {
+    width: 230px;
+    height: 240px;
+}
+
+div#info {
+    width: 75%;
+    height: 95%;
+    float: left;
+    color: black;
+}
+
+div#close {
+    margin-left: 936px;
+}
+div#close button{
+    background-color: red;
+}
+
+div#areaInfo {
+    font-size: 20px;
+    padding: 2px;
+    float: left;
+}
+
+div#info-comment {
+    float: left;
+}
